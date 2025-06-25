@@ -1,4 +1,4 @@
-# ![Probound test](https://github.com/stephenkayade/probound-assessment/blob/master/public/images/login-page.png)
+# ![Probound test](https://github.com/stephenkayade/probound-assessment/blob/master/public/images/assets/login-page.png)
 # WebApp
 <table>
 <tr>
@@ -19,39 +19,39 @@ Here is a working live demo of the test solution:  https://adediran-probound-ass
 
 ### Signup page
 
-![](https://github.com/stephenkayade/probound-assessment/blob/master/public/images/signup-page.png)
+![](https://github.com/stephenkayade/probound-assessment/blob/master/public/images/assets/signup-page.png)
 
 ### Responsive Signup page
 
-![](https://github.com/stephenkayade/probound-assessment/blob/master/public/images/responsive-signup.png)
+![](https://github.com/stephenkayade/probound-assessment/blob/master/public/images/assets/responsive-signup.png)
 
 ### Verification page
 
-![](https://github.com/stephenkayade/probound-assessment/blob/master/public/images/verify-page.png)
+![](https://github.com/stephenkayade/probound-assessment/blob/master/public/images/assets/verify-page.png)
 
 ### Login page
 
-![](https://github.com/stephenkayade/probound-assessment/blob/master/public/images/login-page.png)
+![](https://github.com/stephenkayade/probound-assessment/blob/master/public/images/assets/login-page.png)
 
 ### Responsive Login page
 
-![](https://github.com/stephenkayade/probound-assessment/blob/master/public/images/responsive-login.png)
+![](https://github.com/stephenkayade/probound-assessment/blob/master/public/images/assets/responsive-login.png)
 
 ### Forgot Password page
 
-![](https://github.com/stephenkayade/probound-assessment/blob/master/public/images/forgot-page.png)
+![](https://github.com/stephenkayade/probound-assessment/blob/master/public/images/assets/forgot-page.png)
 
 ### Responsive Forgot Password page
 
-![](https://github.com/stephenkayade/probound-assessment/blob/master/public/images/responsive-forgot.png)
+![](https://github.com/stephenkayade/probound-assessment/blob/master/public/images/assets/responsive-forgot.png)
 
 ### Reset Password page
 
-![](https://github.com/stephenkayade/probound-assessment/blob/master/public/images/reset-page.png)
+![](https://github.com/stephenkayade/probound-assessment/blob/master/public/images/assets/reset-page.png)
 
 ### Responsive Reset Password page
 
-![](https://github.com/stephenkayade/probound-assessment/blob/master/public/images/responsive-reset.png)
+![](https://github.com/stephenkayade/probound-assessment/blob/master/public/images/assets/responsive-reset.png)
 
 ### Development
 Want to contribute? Great!
