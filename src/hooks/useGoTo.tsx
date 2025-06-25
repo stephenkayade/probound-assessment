@@ -20,40 +20,11 @@ const useGoTo = () => {
 
     const navigate = useNavigate();
     const location = useLocation()
-    const { userContext } = useContextType();
-
-    const {
-        setSidebar
-    } = userContext;
 
     const goTo = (url: string) => {
         if (url) {
             navigate(url)
         }
-    }
-
-    const toMainRoute = (e: any, name: string) => {
-
-        if (e) { e.preventDefault(); }
-
-        const route = routes.find((x) => x.name === name);
-
-        if (route) {
-
-            navigate(computePath(route.url))
-
-            setSidebar({
-                route: route,
-                subroutes: route.subroutes ? route.subroutes : [],
-                inroutes: route.inroutes ? route.inroutes : [],
-                collapsed: false,
-                isOpen: true
-            })
-
-            storage.keep('route.name', route.name);
-
-        }
-
     }
 
     const toDetailRoute = (e: any, options: IToDetails) => {
@@ -144,7 +115,6 @@ const useGoTo = () => {
         navigate,
         computePath,
         toDetailRoute,
-        toMainRoute,
         getSubroutes,
         getInRoutes,
         getRoute,
