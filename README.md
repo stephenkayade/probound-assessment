@@ -1,4 +1,4 @@
-# ![Probound test](https://github.com/stephenkayade/probound-assessment/blob/master/public/images/clients-page.png)
+# ![Probound test](https://github.com/stephenkayade/probound-assessment/blob/master/public/images/login-page.png)
 # WebApp
 <table>
 <tr>
@@ -17,20 +17,41 @@ Here is a working live demo of the test solution:  https://adediran-probound-ass
 
 ## Site
 
-### Clients Page
+### Signup page
 
-![](https://github.com/stephenkayade/probound-assessment/blob/master/public/images/clients-page.png)
+![](https://github.com/stephenkayade/probound-assessment/blob/master/public/images/signup-page.png)
 
-### Add Client Modal
+### Responsive Signup page
 
-![](https://github.com/stephenkayade/probound-assessment/blob/master/public/images/add-client-modal.png)
+![](https://github.com/stephenkayade/probound-assessment/blob/master/public/images/responsive-signup.png)
 
-### Clients Page responsiveness
-![](https://github.com/stephenkayade/probound-assessment/blob/master/public/images/responsive-clients-page.png)
+### Verification page
 
-### Add Client Modal responsiveness
+![](https://github.com/stephenkayade/probound-assessment/blob/master/public/images/verify-page.png)
 
-![](https://github.com/stephenkayade/probound-assessment/blob/master/public/images/responsive-add-client-modal.png)
+### Login page
+
+![](https://github.com/stephenkayade/probound-assessment/blob/master/public/images/login-page.png)
+
+### Responsive Login page
+
+![](https://github.com/stephenkayade/probound-assessment/blob/master/public/images/responsive-login.png)
+
+### Forgot Password page
+
+![](https://github.com/stephenkayade/probound-assessment/blob/master/public/images/forgot-page.png)
+
+### Responsive Forgot Password page
+
+![](https://github.com/stephenkayade/probound-assessment/blob/master/public/images/responsive-forgot.png)
+
+### Reset Password page
+
+![](https://github.com/stephenkayade/probound-assessment/blob/master/public/images/reset-page.png)
+
+### Responsive Reset Password page
+
+![](https://github.com/stephenkayade/probound-assessment/blob/master/public/images/responsive-reset.png)
 
 ### Development
 Want to contribute? Great!
@@ -152,6 +173,7 @@ src/
     ├── sora - Typography (font family)
 ├── components
   ├── app - contains UI that is used in the entire App instead of a page
+  ├── animations - contains reusable animation UI that is used in the entire App
   ├── partials - contains subfolders that contains very reusable UI components
 ├── context
   ├── user - contains three user context files that is used in the entire application.
