@@ -1,6 +1,5 @@
 import React, { useEffect, useImperativeHandle, forwardRef, useRef, ForwardedRef, useState, useContext } from "react"
 import { IFileog, IFileUpload,  } from "../../../utils/interfaces.util";
-import useSidebar from "../../../hooks/useSidebar";
 import useToast from "../../../hooks/useToast";
 
 const Fileog = forwardRef((props: IFileog, ref: ForwardedRef<any>) => {
