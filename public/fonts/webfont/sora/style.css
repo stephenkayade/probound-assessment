@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Sora-Bold';
+    src: url('Sora-Bold.woff2') format('woff2'),
+        url('Sora-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sora-ExtraBold';
+    src: url('Sora-ExtraBold.woff2') format('woff2'),
+        url('Sora-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sora-ExtraLight';
+    src: url('Sora-ExtraLight.woff2') format('woff2'),
+        url('Sora-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sora-Light';
+    src: url('Sora-Light.woff2') format('woff2'),
+        url('Sora-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sora-Medium';
+    src: url('Sora-Medium.woff2') format('woff2'),
+        url('Sora-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sora-Regular';
+    src: url('Sora-Regular.woff2') format('woff2'),
+        url('Sora-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sora-SemiBold';
+    src: url('Sora-SemiBold.woff2') format('woff2'),
+        url('Sora-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sora-Thin';
+    src: url('Sora-Thin.woff2') format('woff2'),
+        url('Sora-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+.font-sora-xbold, .font-sora-xbold a, .font-sora-xbold span{
+    font-family: 'Sora-ExtraBold';
+}
+
+.font-sora-bold, .font-sora-bold a, .font-sora-bold span{
+    font-family: 'Sora-Bold';
+}
+
+.font-sora-semibold, .font-sora-semibold a, .font-sora-semibold span{
+    font-family: 'Sora-SemiBold';
+}
+
+.font-sora-medium, .font-sora-medium a, .font-sora-medium span{
+    font-family: 'Sora-Medium';
+}
+
+.font-sora, .font-sora a, .font-sora span{
+    font-family: 'Sora-Regular';
+}
+
+.font-sora-Light, .font-sora-Light a, .font-sora-Light span{
+    font-family: 'Sora-Light';
+}
+
+.font-sora-ExtraLight, .font-sora-ExtraLight a, .font-sora-ExtraLight span{
+    font-family: 'Sora-ExtraLight';
+}
+
+.font-sora-Thin, .font-sora-Thin a, .font-sora-Thin span{
+    font-family: 'Sora-Thin';
+}
+
