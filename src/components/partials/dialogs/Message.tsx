@@ -48,9 +48,9 @@ const Message = (props: IMessage) => {
                 </div>
 
                 <div className="w-full text-center">
-                    <h2 className="font-sora-bold text-[25px] prs-950">{title}</h2>
+                    <h2 className="font-sora-bold text-[25px] color black mb-5">{title}</h2>
 
-                    <p className="font-sora text-[15px] prs-950 text-center max-w-[70%] mx-auto">
+                    <p className="font-sora text-[15px] color black text-center max-w-[70%] mx-auto">
                         {message}
                     </p>
                 </div>
@@ -63,7 +63,7 @@ const Message = (props: IMessage) => {
                         loading={false}
                         disabled={false}
                         block={false}
-                        className="form-button min-w-[150px]"
+                        className="form-button min-w-[250px]"
                         text={{
                             label: button.text ? button.text : "Continue",
                             size: 13,

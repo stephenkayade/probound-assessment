@@ -13,6 +13,8 @@ import { Link } from 'react-router-dom'
 import HeaderText from '../../components/partials/ui/HeadingText'
 import Text from '../../components/partials/ui/Text'
 import { onboardType } from '../../utils/enums.util'
+import Step3 from './Step3'
+import { sideTabs } from '../../_data/seed'
 
 const Onboarding = () => {
 
@@ -36,12 +38,7 @@ const Onboarding = () => {
         message: ''
     });
 
-    const sideTabs = [
-        { icon: 'user', title: 'Organization Information', desc: 'Provide your company', stage: 'info' },
-        { icon: 'lock', title: 'Organization Address', desc: 'Start collaborating with your team', stage: 'address' },
-        { icon: 'house', title: 'Invite a team member', desc: 'Start collaborating with your team', stage: 'member' },
-        { icon: 'users', title: 'Success', desc: 'You have successfully onboarded your business', stage: 'success' },
-    ]
+
 
     const handleSelectTab = (e: MouseEvent<HTMLAnchorElement>, next: string) => {
         if (e) e.preventDefault()
@@ -82,20 +79,17 @@ const Onboarding = () => {
 
                                 return <div className='relative z-10'>
                                     <Link to='' onClick={(e) => handleSelectTab(e, tab.stage)} className='flex gap-6 items-center'>
-                                        <div className={`${isCompletedOrCurrent ? 'bg-white' : 'bg-[#176396]'} flex items-center justify-center h-6 w-[40px] h-[40px] rounded-full`} aria-disabled>
-                                            <Icon type='polio' name={tab.icon} size={25} style={{ color: '#1774B1' }} />
+                                        <div className={`${isCompletedOrCurrent ? 'bg-white' : 'bg-[#176396]'} flex items-center justify-center h-6 w-[40px] h-[40px] rounded-full`}>
+                                            <div className="">
+                                                <img className=" w-[25px] " src={`../../../images/assets/icon@${tab.icon}.svg`} alt={tab.icon} loading="lazy" />
+                                            </div>
                                         </div>
                                         <div className='mt-2 text-white'>
                                             <HeaderText title={tab.title} size='lg' color='text-white' />
                                             <Text title={tab.desc} color='text-white' weight={'light'} />
                                         </div>
                                     </Link>
-                                    {/* {
-                                        sideTabs[index + 1] &&
-                                        <div className="absolute left-4.5 -bottom-16">
-                                            <div className={`h-[72px] w-[3px]  ${stage === tab.stage ? 'bg-blue-200' : 'bg-[#3A89BD]'}`}></div>
-                                        </div>
-                                    } */}
+
                                 </div>
                             })
                         }
@@ -124,24 +118,24 @@ const Onboarding = () => {
                                 {
                                     stage === onboardType.INFO &&
                                     <>
-                                        <Step0 onClick={(e) => handleStage(e, onboardType.ADDRESS)} />
+                                        <Step0 onClick={(e) => handleNextStep(e, onboardType.ADDRESS)} />
                                     </>
                                 }
 
                                 {
                                     stage === onboardType.ADDRESS &&
-                                    <Step1 onClick={(e) => handleStage(e, onboardType.MEMBER)} />
+                                    <Step1 onClick={(e) => handleNextStep(e, onboardType.MEMBER)} />
 
                                 }
 
                                 {
                                     stage === onboardType.MEMBER &&
-                                    <Step2 onClick={(e) => handleStage(e, onboardType.SUCCESS)} />
+                                    <Step2 onClick={(e) => handleNextStep(e, onboardType.SUCCESS)} />
                                 }
 
                                 {
                                     stage === onboardType.SUCCESS &&
-                                    <>Successful</>
+                                    <Step3 onClick={(e) => handleNextStep(e, onboardType.SUCCESS)} />
                                 }
 
                             </div>

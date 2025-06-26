@@ -14,7 +14,7 @@ interface IHeaderTextProps {
 const HeaderText: FC<IHeaderTextProps> = ({ title, children, weight, size, color, className }) => {
 
     return (
-        <h3 className={`tracking-[-1px] ${weight ? helper.formatWeight(weight) : ''} ${size ? helper.formatSize(size) : ''}  ${color ?? 'prs-950'} ${className ?? ''}`}>
+        <h3 className={`tracking-[-1px] ${weight ? helper.formatWeight(weight) : ''} ${size ? helper.formatSize(size) : ''}  ${color ?? 'color-black'} ${className ?? ''}`}>
             {children ? children : title}
         </h3>
 

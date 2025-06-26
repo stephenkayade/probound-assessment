@@ -1,3 +1,4 @@
+import { onboardType } from "../utils/enums.util";
 import { IToast } from "../utils/interfaces.util";
 
 const toast: IToast = {
@@ -19,6 +20,13 @@ const onboard = {
     red: { color: '#B80606', bg: '#FFEBEB', active: '#FF3030' },
     pink: { color: '#C620AB', bg: '#FFECFC', active: '#EA04C4' }
 }
+
+const sideTabs = [
+    { icon: 'building', title: 'Organization Information', desc: 'Provide your company', stage: onboardType.INFO },
+    { icon: 'map', title: 'Organization Address', desc: 'Start collaborating with your team', stage: onboardType.ADDRESS },
+    { icon: 'users', title: 'Invite a team member', desc: 'Start collaborating with your team', stage: onboardType.MEMBER },
+    { icon: 'check', title: 'Success', desc: 'You have successfully onboarded your business', stage: onboardType.SUCCESS },
+]
 
 const orgSize = [
     { name: '< 100', value: '< 100' },
@@ -146,6 +154,7 @@ const timezones = [
 export {
     toast,
     onboard,
+    sideTabs,
     orgSize,
     roles,
     calenderSystem,

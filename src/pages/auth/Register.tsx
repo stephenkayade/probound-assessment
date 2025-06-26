@@ -17,67 +17,19 @@ import CustomButton from "../../components/partials/buttons/CustomButton";
 import AuthLogo from "../../components/app/auth/AuthLogo";
 import HeaderText from "../../components/partials/ui/HeadingText";
 import Text from "../../components/partials/ui/Text";
+import useRegister from "../../hooks/useRegister";
 
 const RegisterPage = ({ }) => {
 
     const { goTo } = useGoTo()
+    const { form, step, alert, loading, setForm, handleRegister } = useRegister()
 
-    const [step, setStep] = useState<number>(0)
-    const [form, setForm] = useState({
-        firstName: '',
-        lastName: '',
-        email: '',
-        password: '',
-        confirmPassword: '',
-        phoneCode: '+234',
-        phoneNumber: ''
-    })
-    const [loading, setLoading] = useState<boolean>(false);
-    const [alert, setAlert] = useState<IAlert>({
-        name: '',
-        type: 'success',
-        show: false,
-        message: ''
-    });
+
 
     useEffect(() => {
 
     }, [])
 
-    const handleRegister = async (e: any) => {
-
-        if (e) { e.preventDefault(); }
-
-        if (!form.firstName) {
-            setAlert({ ...alert, type: 'error', show: true, name: 'firstName', message: 'first name is required' });
-        }
-        else if (!form.lastName) {
-            setAlert({ ...alert, type: 'error', show: true, name: 'lastName', message: 'last name is required' });
-        }
-        else if (!form.email) {
-            setAlert({ ...alert, type: 'error', show: true, name: 'email', message: 'email is required' });
-        }
-        else if (!form.phoneNumber) {
-            setAlert({ ...alert, type: 'error', show: true, name: 'phone', message: 'phone number is required' });
-        }
-        else if (!form.password) {
-            setAlert({ ...alert, type: 'error', show: true, name: 'password', message: 'password is required' });
-        }
-        else if (!form.confirmPassword) {
-            setAlert({ ...alert, type: 'error', show: true, name: 'password', message: 'confirm password is required' });
-        }
-        else if (form.password !== form.confirmPassword) {
-            setAlert({ ...alert, type: 'error', show: true, name: 'password', message: 'confirm password does not match password' });
-        }
-        else {
-            goTo('/verify')
-        }
-
-        setTimeout(() => {
-            setAlert({ ...alert, show: false, name: '' });
-        }, 2000)
-
-    }
 
     return (
         <>
@@ -303,11 +255,11 @@ const RegisterPage = ({ }) => {
                                 <>
                                     <Divider show={false} />
 
-                                    <div className="w-[60%] mx-auto my-0">
+                                    <div className="w-[80%] mx-auto my-0">
 
                                         <Message
                                             type="success"
-                                            message="Your account has been created. Continue to access your account"
+                                            message="Your account has been created. Continue to verify your account"
                                             title="Way to go!"
                                             button={{
                                                 enable: true,

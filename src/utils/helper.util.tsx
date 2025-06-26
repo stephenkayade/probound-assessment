@@ -963,6 +963,8 @@ export const formatWeight = (weight: FontWeightType = 'medium') => {
             return 'font-sora-light'
         case 'medium':
             return 'font-sora-medium'
+        case 'semibold':
+            return 'font-sora-semibold'
         case 'bold':
             return 'font-sora-bold'
         case 'xbold':

@@ -74,7 +74,7 @@ const Step2: FC<IStep> = ({ onClick }) => {
                         autoComplete={false}
                         placeholder="Yes"
                         label={{
-                            required: true,
+                            required: false,
                             fontSize: 13,
                             title: "Do you have sales team?"
                         }}
@@ -257,7 +257,7 @@ const Step2: FC<IStep> = ({ onClick }) => {
                             enable: true,
                             child: <></>
                         }}
-                        onClick={(e) => { }}
+                        onClick={onClick}
                     />
                 </FormField>
 

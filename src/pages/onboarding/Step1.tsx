@@ -35,7 +35,7 @@ const Step1: FC<IStep> = ({ onClick }) => {
     return (
         <div>
             <div className="text-center">
-                <HeaderText title='Organization Address' size='lgr' />
+                <HeaderText title='Organization Address' size='lgr' weight={'semibold'} />
                 <Text title='Provide few information about your company location' className='mb-0' />
             </div>
 
@@ -51,7 +51,7 @@ const Step1: FC<IStep> = ({ onClick }) => {
                         placeholder="address.."
                         isError={alert.name === 'address' ? true : false}
                         label={{
-                            required: true,
+                            required: false,
                             fontSize: 13,
                             title: "Legal Address"
                         }}
@@ -67,7 +67,7 @@ const Step1: FC<IStep> = ({ onClick }) => {
                         autoComplete={false}
                         placeholder="unit 20"
                         label={{
-                            required: true,
+                            required: false,
                             fontSize: 13,
                             title: "Apt / Suite / Floor (Optional)"
                         }}
@@ -178,7 +178,7 @@ const Step1: FC<IStep> = ({ onClick }) => {
                             placeholder="code"
                             isError={alert.name === 'email' ? true : false}
                             label={{
-                                required: true,
+                                required: false,
                                 fontSize: 13,
                                 title: "Postal / Zip Code"
                             }}

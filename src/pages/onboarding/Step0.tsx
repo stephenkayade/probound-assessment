@@ -19,7 +19,7 @@ const Step0: FC<IStep> = ({ onClick }) => {
     return (
         <div>
             <div className="text-center">
-                <HeaderText title='Organization information' size='lgr' />
+                <HeaderText title='Organization information' size='lgr' weight={'semibold'} />
                 <Text title='Provide your company' className='mb-0' />
             </div>
 

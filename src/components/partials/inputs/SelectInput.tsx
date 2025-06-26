@@ -44,13 +44,13 @@ const SelectInput = forwardRef((props: ISelectInput, ref: ForwardedRef<any>) => 
 
     const cc = () => {
 
-        let result: string = `form-control rounded-lg transition-all duration-250 w-full appearance-none font-sora text-base border border-[1.8px] ${ch.h}`;
+        let result: string = `form-control rounded-lg transition-all duration-250 w-full appearance-none font-sora text-base border border-[1.8px]  ${ch.h}`;
 
         // colors, borders and focus
         if (isError) {
             result = result + ` prbr-700 bdr-prbr-700`
         } else {
-            result = result + ` text-[#9D9BA3] bdr-prg-200 ${showFocus ? 'bdrf-prcb-400 bdrh-prcb-200' : ''}`
+            result = result + `peer text-gray-400 focus:text-black bdr-prg-200 ${showFocus ? 'bdrf-prcb-400 bdrh-prcb-200' : ''}`
         }
 
         // padding
@@ -117,7 +117,7 @@ const SelectInput = forwardRef((props: ISelectInput, ref: ForwardedRef<any>) => 
                 >
                     {
                         placeholder.enable &&
-                        <option value="">{helper.capitalize(placeholder.value)}</option>
+                        <option value="" disabled selected hidden>{helper.capitalize(placeholder.value)}</option>
                     }
                     {
                         options.map((item, index) =>
